@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import AuthWrapper from './components/AuthWrapper';
+import RequestRide from './components/RequestRide';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <AuthWrapper />,
+  },
+  {
+    path: "/ride",
+    element: <RequestRide />
+  }
+]);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='auth-container'>
+        <div className='left-container'>
+          <h1>Cab Booking App</h1>
+        </div>
+        <div className='right-container'>
+          <RouterProvider router={router} />
+        </div>
+      </div>
     </div>
   );
 }

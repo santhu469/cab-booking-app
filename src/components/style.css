@@ -1,0 +1,39 @@
+.auth-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container .left-container {
+    width: 30%;
+    padding: 20px;
+}  
+
+.auth-container .right-container {
+    width: 45%;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.auth-container .right-container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.auth-container .right-container button { 
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 14px;
+}
+.auth-container .right-container button:focus {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.auth-container .right-container div{
+    margin-bottom: 10px;
+}

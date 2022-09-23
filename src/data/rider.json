@@ -1,0 +1,30 @@
+[
+    {
+        "name": "san",
+        "location": {"x":123.456, "y": -34.894},
+        "password": "password",
+        "username": "santhosh",
+        "type": "rider"
+    },
+    {
+        "name": "sathish",
+        "location": {"x":44.968046, "y": -94.420307},
+        "password": "password",
+        "username": "sathish",
+        "type": "rider"
+    },
+    {
+        "name": "john",
+        "location": {"x":44.33328, "y": -89.132008},
+        "password": "password",
+        "username": "john",
+        "type": "rider"
+    },
+    {
+        "name": "Kevin",
+        "location": {"x":33.755787, "y": -116.359998},
+        "password": "password",
+        "username": "kevin",
+        "type": "rider"
+    }
+]
